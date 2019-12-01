@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-slim
+FROM openjdk:11-jdk-slim
 
 ARG SCALA_VERSION="2.13.1"
 ARG SBT_VERSION="1.3.4"
@@ -8,7 +8,7 @@ ENV SCALA_HOME="/usr/local/scala-${SCALA_VERSION}"
 
 RUN apt-get update -qq; \
     apt-get autoremove -qq --purge; \
-    apt-get install -qq --no-install-recommends wget; \
+    apt-get install -qq --no-install-recommends wget fakeroot; \
     wget -qO- https://downloads.typesafe.com/scala/${SCALA_VERSION}/scala-${SCALA_VERSION}.tgz | tar xfz - -C /usr/local && \
     rm -f ${SCALA_HOME/bin/*.bat && \
     ln -s ${SCALA_HOME}/bin/scala /usr/local/bin/scala; \
