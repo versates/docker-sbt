@@ -1,7 +1,7 @@
 # Scala and sbt for Docker
 ## Supported tags
 * `1.3.4`, `latest` [(Dockerfile)](https://github.com/versates/docker-sbt/blob/1.3.4/Dockerfile)
-* `1.3.4-jdk`, `jdk` [(jdk/Dockerfile)](https://github.com/versates/docker/blob/1.3.4/jdk/Dockerfile)
+* `1.3.4-jdk`, `jdk` [(jdk/Dockerfile)](https://github.com/versates/docker-sbt/blob/1.3.4/jdk/Dockerfile)
 
 [![](https://images.microbadger.com/badges/image/versates/sbt.svg)](https://microbadger.com/images/versates/sbt "Get your own image badge on microbadger.com")
 
@@ -13,3 +13,6 @@ Default versions are intended to run [Scala](http://www.scala-lang.org) and [sbt
 
 ## JDK Version
 JDK is built with the required dependencies for building and packaging Scala and Java applications with sbt.
+
+## License
+This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
