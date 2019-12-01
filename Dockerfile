@@ -12,7 +12,7 @@ RUN apt-get update -qq; \
     apt-get autoremove -qq --purge; \
     apt-get install -qq --no-install-recommends wget; \
     wget -qO- https://downloads.typesafe.com/scala/${SCALA_VERSION}/scala-${SCALA_VERSION}.tgz | tar xfz - -C /usr/local && \
-    rm -f ${SCALA_HOME/bin/*.bat && \
+    rm -f ${SCALA_HOME}/bin/*.bat && \
     ln -s ${SCALA_HOME}/bin/scala /usr/local/bin/scala; \
     wget -q https://dl.bintray.com/sbt/debian/sbt-${SBT_VERSION}.deb && \
     dpkg -i sbt-${SBT_VERSION}.deb && \
