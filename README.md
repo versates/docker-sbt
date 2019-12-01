@@ -6,7 +6,7 @@
 [![](https://images.microbadger.com/badges/image/versates/sbt.svg)](https://microbadger.com/images/versates/sbt "Get your own image badge on microbadger.com")
 
 ## Base image
-* [openjdk](https://hub.docker.com/_/openjdk)
+* [openjdk](https://hub.docker.com/_/openjdk) (JRE 11 | JDK 11 / Debian Buster Slim)
 
 ## JRE Only
 Default versions are intended to run [Scala](http://www.scala-lang.org) and [sbt](http://www.scala-sbt.org) applications. If you want to compile and build Scala applications, use the JDK version instead.
