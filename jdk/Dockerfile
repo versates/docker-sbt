@@ -1,5 +1,7 @@
 FROM openjdk:11-jdk-slim
 
+LABEL maintainer="Versates <docker@versates.com>"
+
 ARG SCALA_VERSION="2.13.1"
 ARG SBT_VERSION="1.3.4"
 ARG APPUSER="versa"
@@ -22,7 +24,6 @@ RUN apt-get update -qq; \
 USER ${APPUSER}
 WORKDIR /usr/local/${APPUSER}
 
-# Inspired by hseeberger/sbt-scala
 RUN sbt sbtVersion; \
     mkdir project; \
     echo "scalaVersion := \"${SCALA_VERSION}\"" | tee build.sbt; \

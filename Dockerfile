@@ -1,5 +1,7 @@
 FROM openjdk:11-jre-slim
 
+LABEL maintainer="Versates <docker@versates.com>"
+
 ARG SCALA_VERSION="2.13.1"
 ARG SBT_VERSION="1.3.4"
 ARG APPUSER="versa"
