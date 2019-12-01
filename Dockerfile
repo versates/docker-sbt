@@ -4,15 +4,13 @@ ARG SCALA_VERSION="2.13.1"
 ARG SBT_VERSION="1.3.4"
 ARG APPUSER="versa"
 
-ENV SCALA_HOME="/usr/local/scala"
+ENV SCALA_HOME="/usr/local/scala-${SCALA_VERSION}"
 
 RUN apt-get update -qq; \
     apt-get autoremove -qq --purge; \
     apt-get install -qq --no-install-recommends wget fakeroot; \
     wget -qO- https://downloads.typesafe.com/scala/${SCALA_VERSION}/scala-${SCALA_VERSION}.tgz | tar xfz - -C /usr/local && \
-    mv /usr/local/scala-${SCALA_VERSION} ${SCALA_HOME} && \
-    chown -R root:root ${SCALA_HOME} && \
-    chmod -R 0755 ${SCALA_HOME} && \
+    rm -f ${SCALA_HOME/bin/*.bat && \
     ln -s ${SCALA_HOME}/bin/scala /usr/local/bin/scala; \
     wget -q https://dl.bintray.com/sbt/debian/sbt-${SBT_VERSION}.deb && \
     dpkg -i sbt-${SBT_VERSION}.deb && \
