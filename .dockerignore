@@ -1,0 +1,4 @@
+.git
+.dockerignore
+jdk
+Dockerfile
