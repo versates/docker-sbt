@@ -2,8 +2,8 @@ FROM openjdk:11-jdk-slim
 
 LABEL maintainer="Versates <docker@versates.com>"
 
-ARG SCALA_VERSION="2.13.1"
-ARG SBT_VERSION="1.3.4"
+ARG SCALA_VERSION="2.13.2"
+ARG SBT_VERSION="1.3.10"
 ARG APPUSER="versa"
 
 ENV SCALA_HOME="/usr/local/scala-${SCALA_VERSION}"
