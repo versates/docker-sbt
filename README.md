@@ -1,7 +1,7 @@
 # Scala and sbt for Docker
 ## Supported tags
-* `1.3.4`, `latest` [(Dockerfile)](https://github.com/versates/docker-sbt/blob/1.3.4/Dockerfile)
-* `1.3.4-jdk`, `jdk` [(jdk/Dockerfile)](https://github.com/versates/docker-sbt/blob/1.3.4/jdk/Dockerfile)
+* `1.3.10`, `latest` [(Dockerfile)](https://github.com/versates/docker-sbt/blob/1.3.10/Dockerfile)
+* `1.3.10-jdk`, `jdk` [(jdk/Dockerfile)](https://github.com/versates/docker-sbt/blob/1.3.10/jdk/Dockerfile)
 
 [![](https://images.microbadger.com/badges/image/versates/sbt.svg)](https://microbadger.com/images/versates/sbt "Get your own image badge on microbadger.com")
 
